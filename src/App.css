@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   background-color: yellow;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
