@@ -1,0 +1,15 @@
+.input_div input{
+  margin: 0 1em;
+}
+.button_div{
+  margin: 2em 0;
+}
+.button_div button{
+  margin: 0 1em;
+  background-color: rgb(62, 62, 148);
+  color: white;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  padding: 0.5em 0.7em;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Calculator from "./components/Calculator";
 
 function App(){
   const [distance, setDistance] = useState();
@@ -22,36 +23,14 @@ function App(){
   return (
     <div className="App">
       <h1>Speed Calculator</h1>
-
-      <div className="input_div">
-        <input
-          type="number"
-          placeholder="Distance"
-          value={distance}
-          onChange={handleDistance}
-        />
-        <input
-          type="number"
-          placeholder="Time"
-          value={time}
-          onChange={handleTime}
-        />
-      </div>
-      <div className="button_div">
-        <button onClick={calculateSpeed}>Calculate Speed</button>
-        <button onClick={clearSpeed}>Clear Speed</button>
-      </div>
-      <div>
-        <h1>
-          {speed <= 60
-            ? `Slow ${speed} km/hr.`
-            : speed > 60 && speed < 100
-            ? `Fast ${speed} km/hr.`
-            : speed >= 100
-            ? `Very Fast ${speed} km/hr.`
-            : null}
-        </h1>
-      </div>
+      <Calculator
+      handleDistance={handleDistance}
+      handleTime={handleTime}
+      calculateSpeed={calculateSpeed}
+      clearSpeed={clearSpeed}
+      distance={distance}
+      time={time}
+      speed={speed} />
     </div>
   );
 }
