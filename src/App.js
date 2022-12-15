@@ -24,13 +24,16 @@ function App(){
     <div className="App">
       <h1>Speed Calculator</h1>
       <Calculator
-      handleDistance={handleDistance}
-      handleTime={handleTime}
-      calculateSpeed={calculateSpeed}
-      clearSpeed={clearSpeed}
-      distance={distance}
-      time={time}
-      speed={speed} />
+        {...{
+          handleDistance,
+          handleTime,
+          calculateSpeed,
+          clearSpeed,
+          distance,
+          time,
+          speed,
+        }}
+      />
     </div>
   );
 }
