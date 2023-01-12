@@ -1,9 +1,16 @@
 .App {
   text-align: center;
-  background-color: yellow;
+  background-color: chocolate;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.claculator_div{
+  text-align: center;
+  background-color: burlywood;
   border: 1px solid grey;
   border-radius: 5px;
-  width: fit-content;
+  width: 50%;
   margin: 0 auto;
 }
 

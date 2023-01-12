@@ -1,5 +1,16 @@
+.input_div{
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .input_div input{
-  margin: 0 1em;
+  width: 90%;
+  outline: none;
+  padding: 4px 6px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 .button_div{
   margin: 2em 0;

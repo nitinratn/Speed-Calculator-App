@@ -22,18 +22,20 @@ function App(){
 
   return (
     <div className="App">
-      <h1>Speed Calculator</h1>
-      <Calculator
-        {...{
-          handleDistance,
-          handleTime,
-          calculateSpeed,
-          clearSpeed,
-          distance,
-          time,
-          speed,
-        }}
-      />
+      <div className="claculator_div">
+        <h1>Speed Calculator</h1>
+        <Calculator
+          {...{
+            handleDistance,
+            handleTime,
+            calculateSpeed,
+            clearSpeed,
+            distance,
+            time,
+            speed,
+          }}
+        />
+      </div>
     </div>
   );
 }

@@ -12,18 +12,22 @@ function Calculator(props){
     return (
       <>
         <div className="input_div">
-          <input
-            type="number"
-            placeholder="Distance"
-            value={distance}
-            onChange={handleDistance}
-          />
-          <input
-            type="number"
-            placeholder="Time"
-            value={time}
-            onChange={handleTime}
-          />
+          <div className="distance_div">
+            <input
+              type="number"
+              placeholder="Distance"
+              value={distance}
+              onChange={handleDistance}
+            />
+          </div>
+          <div className="time_div">
+            <input
+              type="number"
+              placeholder="Time"
+              value={time}
+              onChange={handleTime}
+            />
+          </div>
         </div>
         <div className="button_div">
           <button onClick={calculateSpeed}>Calculate Speed</button>
